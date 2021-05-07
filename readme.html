@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>H-IIB HTV 2016対応パッチ</title>
+    <style>
+        body {
+            font-family: Meiryo;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            background-color: #f2f2f2;
+            margin: auto;
+            padding: 2rem;
+            max-width: 55rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Arial, Meiryo UI;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        h1 {
+            border-bottom: 0.1rem solid #399139;
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            border-bottom: 0.1rem solid #000000;
+            font-size: 1rem;
+        }
+
+        h3 {
+            border-bottom: 0.1rem solid #808080;
+            font-size: 0.9rem;
+        }
+
+        a[href] {
+            color: #0037d4;
+            text-decoration: none;
+        }
+
+        a[href]:hover {
+            color: #00bfff;
+        }
+
+        strong {
+            color: #000000;
+            padding: 0 0.2rem;
+            white-space: nowrap;
+        }
+
+        kbd {
+            font-family: Arial, Meiryo;
+            background-color: #ffffff;
+            border-bottom: 0.1rem solid #4C4C4C;
+            border-right: 0.1rem solid #4C4C4C;
+            border-top: 0.1rem solid #B2B2B2;
+            border-left: 0.1rem solid #B2B2B2;
+            padding: 0.05rem 0.2rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>H-IIB HTV 2016対応パッチ</h1>
+
+    <ul>
+        <li>
+            <a href="#about">このファイルについて</a>
+        </li>
+        <li>
+            <a href="#install">インストール</a>
+        </li>
+        <li>
+            <a href="#usage">使用方法</a>
+        </li>
+        <li>
+            <a href="#height">ロケットの高さを調整する</a>
+        </li>
+        <li>
+            <a href="#caution">注意</a>
+        </li>
+    </ul>
+
+
+    <h2 id="about">このファイルについて</h2>
+
+
+    <p>
+        <a href="https://www.orbithangar.com/searchid.php?ID=4197" target="_blank" rel="noopener noreferrer">H-IIB
+            HTV</a> MODを<strong>Orbiter2016</strong>に対応させるパッチです。<br>
+        <a href="https://orbinautjp.github.io/basic/d3d9client.html">D3D9Client</a>を導入していない環境では利用できません。
+    </p>
+
+    <p>
+        <a href="https://orbinautjp.github.io/iss/htvmod-install.html">HTV（こうのとり）MODのダウンロード・インストール - Home for
+            Orbinauts</a>
+    </p>
+
+
+    <h2 id="install">インストール</h2>
+
+
+    <p>
+        <strong>Config</strong>と<strong>Textures</strong>の2つのフォルダをコピーする。<br>
+        Orbiterのインストールフォルダにペーストして上書き。
+    </p>
+
+    <p>
+        <a
+            href="https://orbinautjp.github.io/basic/orbitercontrol.html#launchpad">Launchpad</a>で<kbd>Video</kbd>→<kbd>Advanced</kbd>をクリック。<br>
+        <a href="https://orbinautjp.github.io/basic/d3d9client.html#config_advanced">Enable terrain
+            flattening</a>を有効にする。
+    </p>
+
+
+    <h2 id="usage">使用方法</h2>
+
+
+    <p>
+        Orbiterを起動する。<br>
+        <a
+            href="https://orbinautjp.github.io/basic/orbitercontrol.html#launchpad">Launchpad</a>で<strong>JAXA</strong>フォルダをダブルクリック。<br>
+        <strong>JAXA launch</strong>シナリオでゲームを開始する。
+    </p>
+
+    <p>
+        キーボードで<kbd>P</kbd>を押すと、30秒後に自動打ち上げを開始する。<br>
+        軌道投入が終了したら、<kbd>J</kbd>を押してHTVを分離する。
+    </p>
+
+    <p>
+        他の2つのシナリオは、必要なファイルが公開停止になっているので利用できない。
+    </p>
+
+
+    <h2 id="height">ロケットの高さを調整する</h2>
+
+
+    <p>
+        環境によっては、ロケットと発射台の高さにずれが生じることがある。
+    </p>
+
+    <p>
+        <strong>Config\JAXA\H2B.ini</strong>を、メモ帳などのテキストエディタで開く。<br>
+        <strong>cog=</strong>の数字を変更すると、ロケットの地上からの高さを変更できる。
+    </p>
+
+
+    <h2 id="caution">注意</h2>
+
+
+    <p>
+        このパッチファイルの作者と、<a href="https://www.orbithangar.com/searchid.php?ID=4197" target="_blank"
+            rel="noopener noreferrer">H-IIB HTV</a> MODの製作者は<strong>無関係です。</strong><br>
+        本ファイルを使用したことによる不具合について、MOD製作者に質問しないようお願いします。
+    </p>
+
+    <p>
+        不具合などを発見したときは、以下のページで報告してください。
+    </p>
+
+    <ul>
+        <li><a href="https://orbinautjp.github.io/basic/troubleshooting.html">バグ・トラブルを報告する</a></li>
+        <li><a href="https://orbinautjp.github.io/basic/comment.html">コメント</a></li>
+    </ul>
+
+    <p>
+        作者：<a href="https://twitter.com/4FootBlowtorch">Nikogori</a>
+    </p>
+
+</body>
+
+</html>
